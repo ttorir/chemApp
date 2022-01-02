@@ -3,36 +3,42 @@ graph
 node
 [
  id 14
+ position "286.66 331.41"
  label "14"
  text ""
 ]
 node
 [
  id 16
+ position "316.66 331.41"
  label "16"
  text ""
 ]
 node
 [
  id 19
+ position "331.66 305.42"
  label "19"
  text ""
 ]
 node
 [
  id 21
+ position "316.66 279.44"
  label "21"
  text ""
 ]
 node
 [
  id 23
+ position "286.66 279.44"
  label "23"
  text ""
 ]
 node
 [
  id 25
+ position "271.66 305.42"
  label "25"
  text ""
 ]
