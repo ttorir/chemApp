@@ -27,7 +27,7 @@ styles = {
 
 #fig.update_layout(clickmode='event+select')
 ####
-A = nx.read_gml('chemApp/raw_files/Benzene.gml')
+A = nx.read_gml('raw_files/Benzene.gml')
 for node in A.nodes():
     position_string = A.nodes[node]['position']
     A.nodes[node]['pos'] = [float(x) for x in position_string.split()]
@@ -89,7 +89,7 @@ node_trace.text = node_text
 
 fig = go.Figure(data=[edge_trace, node_trace],
              layout=go.Layout(
-                title='<br>Network graph made with Python',
+                title='<br>Hover over the image to learn more',
                 titlefont_size=16,
                 showlegend=False,
                 hovermode='closest',
@@ -102,7 +102,7 @@ fig = go.Figure(data=[edge_trace, node_trace],
                 yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
                 )
 from PIL import Image
-pyLogo = Image.open('chemApp/visualizations/benzene.png')
+pyLogo = Image.open('visualizations/benzene.png')
 fig.add_layout_image(
         source=pyLogo,
         xref="x domain",
